@@ -5,7 +5,11 @@
   "theme_color": "#1976d2",
   "background_color": "#fafafa",
   "display": "standalone",
-  "display_override": ["window-controls-overlay", "standalone", "browser"],
+  "display_override": [
+    "window-controls-overlay",
+    "standalone",
+    "browser"
+  ],
   "scope": "./",
   "start_url": "./",
   "orientation": "portrait",
@@ -16,18 +20,18 @@
     }
   ],
   "share_target": {
-  "action": "/handle-shared-content/",
-  "method": "GET",
-  "params": {
-    "title": "title",
-    "url": "url"
-  }
-},
+    "action": "/handle-shared-content/",
+    "method": "GET",
+    "params": {
+      "title": "title",
+      "url": "url"
+    }
+  },
   "screenshots": [
     {
-      "src":"./assets/screenshots/login.png",
-      "sizes":"768x1700",
-      "type":"image/png",
+      "src": "./assets/screenshots/login.png",
+      "sizes": "768x1700",
+      "type": "image/png",
       "description": "login page"
     }
   ],
@@ -85,6 +89,26 @@
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable any"
+    }
+  ],
+  "edge_side_panel": {
+    "preferred_width": 600
+  },
+  "handle_links": "preferred",
+  "launch_handler": {
+    "client_mode": [
+      "navigate-existing, auto"
+    ]
+  },
+  "categories": [
+    "finance"
+  ],
+  "dir": "ltr",
+  "lang": "en",
+  "prefer_related_applications": false,
+  "scope_extensions": [
+    {
+      "origin": "*.netlify.com"
     }
   ]
 }
