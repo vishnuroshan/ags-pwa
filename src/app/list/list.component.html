@@ -1,0 +1,5 @@
+<div class="list-container">
+  <div class="content" *ngFor="let job of list; index as i">
+   <app-job [title]="job.title" [subTitle]="job.subtitle" [desc]="job.desc"></app-job>
+  </div>
+</div>
