@@ -5,7 +5,7 @@
   "theme_color": "#1976d2",
   "background_color": "#fafafa",
   "display": "standalone",
-  "display_override": ["window-controls-overlay", "standalone", "browser"],
+  "display_override": ["standalone", "browser"],
   "scope": "./",
   "start_url": "./",
   "orientation": "portrait",
@@ -15,6 +15,14 @@
       "url": "/list"
     }
   ],
+  "share_target": {
+  "action": "/handle-shared-content/",
+  "method": "GET",
+  "params": {
+    "title": "title",
+    "url": "url"
+  }
+},
   "screenshots": [
     {
       "src":"./assets/screenshots/login.png",
@@ -47,6 +55,12 @@
       "sizes": "144x144",
       "type": "image/png",
       "purpose": "maskable any"
+    },
+    {
+      "src": "assets/icons/icon-152x152.png",
+      "sizes": "152x152",
+      "type": "image/png",
+      "purpose": "any"
     },
     {
       "src": "assets/icons/icon-152x152.png",
